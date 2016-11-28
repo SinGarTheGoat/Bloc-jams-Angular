@@ -192,3 +192,9 @@
          display: block;
      }
  }
+.player-bar-center{
+    position: center;
+    padding-left: 300px;
+
+
+}
