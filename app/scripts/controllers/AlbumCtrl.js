@@ -1,4 +1,4 @@
-debugger
+
 (function(){
     function AlbumCtrl(Fixtures) {
         
