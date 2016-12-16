@@ -62,6 +62,7 @@
         
         SongPlayer.play = function(song) {
             song = song || SongPlayer.currentSong;
+            debugger
             if (SongPlayer.currentSong !== song) {
                 setSong(song);
 
@@ -88,8 +89,6 @@
             if (currentSongIndex >= currentAlbum.songs.length) {
                 
                 SongPlayer.stopSong();
-                
-                //SongPlayer.currentSong.playing = null;
             } else {
                 var song = currentAlbum.songs[currentSongIndex];
                 setSong(song);
