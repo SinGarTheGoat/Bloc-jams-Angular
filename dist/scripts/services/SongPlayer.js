@@ -2,7 +2,8 @@
     function SongPlayer($rootScope, Fixtures) {
 
         var SongPlayer = {};
-
+        
+         SongPlayer.volume = 100;
 
         //Did I write this right?
         /**
@@ -134,6 +135,17 @@
                 playSong(song);
             }
         };
+        
+       
+        SongPlayer.setVolume = function(value){
+            
+            
+            
+            currentBuzzObject.setVolume(value);
+        }
+        
+        
+        
         return SongPlayer;
 
 
