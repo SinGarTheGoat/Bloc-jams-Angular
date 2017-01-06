@@ -30,6 +30,18 @@
                      scope.max = newValue;
                  });
 
+                attributes.$observe('on-change', function(newValue){
+                     scope.onChange = SongPlayer.setCurrentTime(newValue);
+                    
+                });
+                 
+
+
+                attributes.$observe('on-change', function(newValue){
+                     scope.notifyOnChange = newValue;
+                    debugger
+                });
+                 
 
                  //my work dont think i needed to do this
                  //                 attributes.$$observe('on-change', function(newValue){
@@ -56,6 +68,7 @@
                      };
 
                  }
+
 
                  scope.onClickSeekBar = function(event) {
                      var percent = calculatePercent(seekBar, event);
