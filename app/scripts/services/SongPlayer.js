@@ -118,6 +118,9 @@
         };
         
         SongPlayer.formatTime = function(time){
+           time=time/60;
+           time = time.toFixed(2);
+            time = time.replace(".", ":");
             return time;
             
         }
