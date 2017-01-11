@@ -38,7 +38,7 @@
 
 
                 attributes.$observe('on-change', function(newValue){
-                     scope.notifyOnChange = newValue;
+                     scope.notifyOnChange = newValue
                     debugger
                 });
                  
