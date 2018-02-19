@@ -7,7 +7,7 @@
                 enabled: true,
                 requireBase: false
          });
-         
+
          $stateProvider
          .state('landing', {
              controller: 'LandingCtrl as landing',
@@ -24,9 +24,9 @@
              controller: 'CollectionCtrl as collection',
              templateUrl: '/templates/collection.html'
          });
-    
+
      }
- 
+
      angular
          .module('blocJams', ['ui.router'])
          .config(config);
