@@ -23,7 +23,7 @@
          * @type {Number}
          */
         SongPlayer.currentTime = null;
-        
+
         var currentBuzzObject = null;
 
         /**
@@ -115,10 +115,11 @@
                 currentBuzzObject.setTime(time);
             }
         };
-        
+
         SongPlayer.formatTime = function(time){
+
             return time;
-            
+
         }
 
         SongPlayer.previous = function() {
